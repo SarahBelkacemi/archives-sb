@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Archives de Sarah</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ÉCRAN DE CONNEXION -->
+  <main id="loginPage" class="center-page">
+ <section class="login-card">
+
+  <div class="logo">S</div>
+
+  <h1>Connexion</h1>
+
+  <p class="subtitle">
+    Accéder à votre espace personnel
+  </p>
+
+  <div class="security-note">
+    Espace privé • Archives synchronisées
+  </div>
+
+  <label for="email">Adresse e-mail</label>
+
+  <input
+    id="email"
+    type="text"
+    autocomplete="off"
+    placeholder="Adresse e-mail"
+  >
+
+  <label for="password">Mot de passe</label>
+
+  <input
+    id="password"
+    type="password"
+    autocomplete="off"
+    placeholder="Mot de passe"
+  >
+
+  <button id="loginButton">
+    Se connecter
+  </button>
+
+  <p id="loginError" class="error"></p>
+
+  <p class="login-footer">
+    Cet espace contient des conversations
+    et archives personnelles.
+  </p>
+
+</section>
+  </main>
+
+
+  <!-- FAUX ESPACE PERSONNEL -->
+  <main id="archivePage" class="app hidden">
+
+    <aside class="sidebar">
+      <div>
+        <h2>Archives de Sarah</h2>
+        <p class="small">Historique personnel</p>
+      </div>
+
+      <div class="section-title">ÉPINGLÉS</div>
+
+      <button class="conversation mehdi"
+              data-chat="principal">
+        📌 MEHDI — dossier principal
+      </button>
+
+      <button class="conversation mehdi"
+              data-chat="sst">
+        📌 Urgence Mehdi-cale
+      </button>
+
+      <button class="conversation mehdi"
+              data-chat="backyard">
+        📌 Backyard 6,7 km
+      </button>
+
+      <button class="conversation mehdi"
+              data-chat="bd">
+        📌 BD Mehdi — tentatives infructueuses
+      </button>
+
+      <button class="conversation mehdi"
+              data-chat="noms">
+        📌 BELKACEMI vs MECHAALA
+      </button>
+
+      <button class="conversation mehdi"
+              data-chat="pourquoi">
+        📌 Pourquoi je lui donne tout ça ?
+      </button>
+
+      <button class="conversation mehdi"
+              data-chat="rencontre">
+        📌 Voilà ce que je retiens de notre rencontre
+      </button>
+
+      <button class="conversation secret"
+              data-chat="secret">
+        🔒 Ce que Sarah pense vraiment de Mehdi
+      </button>
+
+
+      <div class="section-title">RÉCENTES</div>
+
+      <button class="conversation"
+              data-chat="poke">
+        Recette poke bowl saumon avocat
+      </button>
+
+      <button class="conversation"
+              data-chat="cuisson">
+        J'ai raté ma cuisson
+      </button>
+
+      <button class="conversation"
+              data-chat="query">
+        Créer un tableau Power Query
+      </button>
+
+      <button class="conversation"
+              data-chat="mail">
+        Reformuler un mail professionnel
+      </button>
+
+      <button class="conversation"
+        data-chat="excel">
+  Formule Excel si cellule vide
+</button>
+
+      <button class="conversation"
+              data-chat="tiramisu">
+        Tiramisu framboise — proportions
+      </button>
+
+      <div class="account">
+  <strong>Sarah B.</strong><br>
+  Compte personnel<br>
+  Synchronisation active
+</div>
+    </aside>
+
+
+    <section class="content">
+      <div id="chatContent">
+
+        <div class="welcome">
+          <h1>Bonjour Sarah</h1>
+          <p>Sélectionnez une conversation.</p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
