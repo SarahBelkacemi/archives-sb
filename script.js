@@ -18,7 +18,7 @@ Ne mets jamais ici le véritable mot de passe
 de ton adresse e-mail.
 */
 
-const FAKE_EMAIL = "sarah.sgdb91@example.com";
+const FAKE_EMAIL = "sarahsgdb91@gmail.com";
 const FAKE_PASSWORD = "Donjon91700";
 
 
